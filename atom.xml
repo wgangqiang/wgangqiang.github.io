@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[G.Q.Wang's Blog]]></title>
+  <subtitle><![CDATA[To see the world.]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2014-10-19T16:34:50.348Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[wgangqiang]]></name>
+    <email><![CDATA[wgangqiang06@163.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[博客测试]]></title>
+    <link href="http://yoursite.com/2014/10/19/first-post/"/>
+    <id>http://yoursite.com/2014/10/19/first-post/</id>
+    <published>2014-10-19T08:15:43.000Z</published>
+    <updated>2014-10-19T16:23:41.000Z</updated>
+    <content type="html"><![CDATA[<p>这是我的第一篇博客文章。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这是我的第一篇博客文章。</p>
+]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
