@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[G.Q.Wang's Blog]]></title>
-  <subtitle><![CDATA[To see the world.]]></subtitle>
+  <subtitle><![CDATA[To See The World of Technology.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-10-19T16:38:22.255Z</updated>
+  <updated>2014-10-20T15:04:31.178Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name><![CDATA[wgangqiang]]></name>
+    <name><![CDATA[G.Q.Wang]]></name>
     <email><![CDATA[wgangqiang06@163.com]]></email>
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[HL20例子学习笔记（2）]]></title>
+    <link href="http://yoursite.com/2014/10/20/model-matlab-hl20-2nd/"/>
+    <id>http://yoursite.com/2014/10/20/model-matlab-hl20-2nd/</id>
+    <published>2014-10-20T14:23:11.000Z</published>
+    <updated>2014-10-20T15:02:08.000Z</updated>
+    <content type="html"><![CDATA[<p>（二）传感器</p>
+<p>在例子中，HL20的传感器被划为两个模块：<br><a id="more"></a></p>
+<img src="/imgine/ADC.bmp" title="adc.mdl">
+
+<p>1）IMU,GPS&amp;Radar Altimeter</p>
+<img src="/imgine/imu.jpg" title="imu.mdl">
+
+
+<p>输入：模型输出量</p>
+<p>输出：A)制导量<br>      B）控制量</p>
+<p>2）Airdata System</p>
+<img src="/imgine/airdata_sys.jpg" title="airdata.mdl">
+
+
+<p>输入：模型输出量</p>
+<p>输出：迎角、侧滑、动压</p>
+<p>启示与改进</p>
+<p>航空器常用以下传感器：</p>
+<p>   GPS:提供经纬度，海拔高度，地速，北东地速度</p>
+<p>   IMU：三轴角速率</p>
+<p>   gyro:俯仰角，滚转角</p>
+<p>   HMR:磁航向</p>
+<p>   Radio Altimeter:相对地面高度</p>
+<p>   ADC:指示空速，真空速，气压高度</p>
+<p>   民用大飞机一般还有测量迎角和侧滑角的传感器</p>
+<p>比较上述航空飞行器与HL20的传感器可以发现，存在一定差异，可以将上述传感器重新划分为单独模块，最后将所有传感器量划分为制导量和控制量。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>（二）传感器</p>
+<p>在例子中，HL20的传感器被划为两个模块：<br>]]>
+    
+    </summary>
+    
+      <category term="动力学建模" scheme="http://yoursite.com/tags/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+      <category term="动力学建模" scheme="http://yoursite.com/categories/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[HL20例子学习笔记（1）]]></title>
+    <link href="http://yoursite.com/2014/10/20/model-matlab-hl20/"/>
+    <id>http://yoursite.com/2014/10/20/model-matlab-hl20/</id>
+    <published>2014-10-20T13:42:19.000Z</published>
+    <updated>2014-10-20T14:51:43.000Z</updated>
+    <content type="html"><![CDATA[<p>MATLAB/SIMULINK向用户提供了许多例子（Demo），以帮助用户快速学习使用MATLAB/SIMULINK进行开发和科研。针对SIMULINK的的航空工具箱，MATLAB提供了一个非常优秀的例子——hl20。所有的库、模型、和开发应用都在路径.\MATLAB\R2010b\toolbox\aeroblks\aerodemos下面。<br><a id="more"></a><br>下面针对该例子进行总结归纳，分析其总体思路和核心的技术点。</p>
+<img src="/imgine/hl20.jpg" title="aeroblk_HL20.mdl">
+
+
+
+<p>文件aeroblk_HL20.mdl为一个较为完整的例子，该例子展示了如何搭建一个完整的航天器的仿真模型。包括以下功能模块：</p>
+<p>动力学模型计算<br>传感器模型<br>舵机模型<br>制导律解算<br>控制律解算<br>辅助的数据可视化功能<br>下面针对这些功能模块逐一进行分析和归纳。</p>
+<p>（一）动力学模型<br>从HL20动力学模型的外部接口可以开出，输入为舵机输入量和推力。舵机输入量一共有6个量：副翼、升降舵、方向舵、襟翼（3个）；可以发现三维推力被设定为[0 0 0],这是应为该例子演示的是HL20无动力返回的过程，所以发动机始终处于关闭状态，推力始终为零。</p>
+<img src="/imgine/dynamics.jpg" title="dynamics">
+
+<p>打开动力学模型可以发现，有5个模块，分别是</p>
+<p>1）气动系数计算模块</p>
+<p>2）气动力和力矩计算模块</p>
+<p>3）标准6自由度刚体模型</p>
+<p>4）大气环境模型</p>
+<p>5）涉及气流环境的模型输出量解算模块</p>
+<p>从这个模块可以发现以下的小技巧：</p>
+<p>a)模型的输入量和输出量很多，一般采用总线，减少连线，而且不容易出错。</p>
+<p>b)动力学模型标准输出量为：首先是标准刚体输出：NED速度（3D），NED位置（3D），欧拉角(3D),姿态角变换阵DCM(3*3)，机体速度（欧美系，3D），角速度（3D）,欧拉角微分（3D）,加速度（3D）；其次是马赫数，迎角和侧滑角。</p>
+<p>c)模型中涉及到许多参变量，应该尽量采用变量的形式，在初始化中加载变量的数值。这样方便修改和进行逻辑判断。</p>
+<p>d)尽量细分子模块，明确子模块的输入和输出，保持独立性，杜绝耦合。</p>
+<p>启示与改进：</p>
+<p>1）HL20是航天器，其模型的输入和输出与航空器存在较大区别。主要体现在控制舵面和输出量。直升机的控制舵面为总距、横向周期变距、纵向周期变距、尾桨距、油门；常规构型的固定翼飞机的控制舵面为油门，副翼，升降舵和方向舵，部分飞机还有襟翼。可以发现这里涉及到一个问题，发动机模型是否应该放在动力学模型中？答案是否定，发动机模型的输出量作为动力学模型的输入量，两个模块相互区分开。固定翼和直升机的发动机存在很大区别，固定翼飞机发动机用于提供推力，可以直接用于加速和减速，而直升机发动机则用于提供稳定转速。与旋翼之间还存在一个复杂的传动机构，这里不再赘述。</p>
+<p>由于航天一般采用惯性导航系统，不使用GPS，而航空器广泛使用GPS，因此对位置量采用何种表示形式值得仔细推敲。模型是否应该输出经纬度？6自由度刚体模型输出NED位置偏移量，这是相对于起始位置的，如果已知起始位置的经纬度，可以很简单直接的计算出实时经纬度。问题是这个工作应该由动力学模型还是传感器模型完成？我认为应该由动力学模型完成。</p>
+<p>2）量纲的选择。一般来说在模型计算时采用国际标准量纲，在传感器模块中将角运动单位由弧度转换为度。</p>
+<p>3）坐标系的选择。目前机体多选择欧美坐标系，大地系多采用NED(north-eat-down)坐标系。这里面有个问题就是垂向速度的正负问题，在GPS,大气数据计算机，无线电高度表这些传感器都是向上为正，这符合人的一般认知习惯。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>MATLAB/SIMULINK向用户提供了许多例子（Demo），以帮助用户快速学习使用MATLAB/SIMULINK进行开发和科研。针对SIMULINK的的航空工具箱，MATLAB提供了一个非常优秀的例子——hl20。所有的库、模型、和开发应用都在路径.\MATLAB\R2010b\toolbox\aeroblks\aerodemos下面。<br>]]>
+    
+    </summary>
+    
+      <category term="动力学建模" scheme="http://yoursite.com/tags/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+      <category term="动力学建模" scheme="http://yoursite.com/categories/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[博客测试]]></title>
