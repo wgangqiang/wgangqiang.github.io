@@ -1,26 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[GQ.Wang's 实验室]]></title>
-  <subtitle><![CDATA[虽然走的很慢，但是从来没有后退。]]></subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-10-21T14:32:05.326Z</updated>
-  <id>http://yoursite.com/</id>
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
   
-  <author>
-    <name><![CDATA[GQ.Wang]]></name>
-    <email><![CDATA[wgangqiang06@163.com]]></email>
-  </author>
-  
-  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[接地的问题]]></title>
-    <link href="http://yoursite.com/2014/10/21/note-ground/"/>
-    <id>http://yoursite.com/2014/10/21/note-ground/</id>
-    <published>2014-10-21T14:11:08.000Z</published>
-    <updated>2014-10-21T14:19:30.000Z</updated>
-    <content type="html"><![CDATA[<p>在接触电气线路的过程中经常会遇到“接地”的问题，但是这个概念一直没有吃透，以下是网络搜集并整理的对于接地问题的解释。<br><a id="more"></a></p>
+    <title>接地的问题 | GQ.Wang&#39;s 实验室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="GQ.Wang">
+    
+    <meta name="description" content="在接触电气线路的过程中经常会遇到“接地”的问题，但是这个概念一直没有吃透，以下是网络搜集并整理的对于接地问题的解释。">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/author.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/slugs.png" alt="GQ.Wang&#39;s 实验室" title="GQ.Wang&#39;s 实验室"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="GQ.Wang&#39;s 实验室">GQ.Wang&#39;s 实验室</a></h1>
+				<h2 class="blog-motto">虽然走的很慢，但是从来没有后退。</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/categories/四轴飞行器">四轴飞行器</a></li>
+					
+						<li><a href="/categories/飞行仿真">飞行仿真</a></li>
+					
+						<li><a href="/categories/修炼笔记">修炼笔记</a></li>
+					
+						<li><a href="/categories/扯闲篇专用">扯闲篇专用</a></li>
+					
+						<li><a href="/about">关于本站</a></li>
+					
+					<li>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/10/21/note-ground/" title="接地的问题" itemprop="url">接地的问题</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="GQ.Wang">GQ.Wang</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2014-10-21T14:11:08.000Z" itemprop="datePublished">2014-10-21</time>
+    更新日期:<time datetime="2014-10-21T14:19:30.000Z" itemprop="dateModified">2014-10-21</time>
+    
+  </p>
+</header>
+
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+		</div>
+		
+		<p>在接触电气线路的过程中经常会遇到“接地”的问题，但是这个概念一直没有吃透，以下是网络搜集并整理的对于接地问题的解释。<br><a id="more"></a></p>
 <p>控制系统中，大致有以下几种地线：<br>（1）数字地：也叫逻辑地，是各种开关量（数字量）信号的零电位。<br>（2）模拟地：是各种模拟量信号的零电位。<br>（3）信号地：通常为传感器的地。<br>（4）交流地：交流供电电源的地线，这种地通常是产生噪声的地。<br>（5）直流地：直流供电电源的地。<br>（6）屏蔽地：也叫机壳地，为防止静电感应和磁场感应而设。 </p>
 <p>以上这些地线处理是系统设计、安装、调试中的一个重要问题。下面就接地问题提出一些看法：<br>（1）控制系统宜采用一点接地。一般情况下,高频电路应就近多点接地，低频电路应一点接地。在低频电路中，布线和元件间的电感并不是什么大问题，然而接地形成的环路的干扰影响很大，因此，常以一点作为接地点；但一点接地不适用于高频，因为高频时，地线上具有电感因而增加了地线阻抗，同时各地线之间又产生电感耦合。一般来说，频率在1MHz以下,可用一点接地；高于10MHz时，采用多点接地；在1～10MHz之间可用一点接地，也可用多点接地。<br>（2）交流地与信号地不能共用。由于在一段电源地线的两点间会有数mV甚至几V电压，对低电平信号电路来说，这是一个非常重要的干扰，因此必须加以隔离和防止。<br>（3）浮地与接地的比较。全机浮空即系统各个部分与大地浮置起来，这种方法简单，但整个系统与大地绝缘电阻不能小于50MΩ。这种方法具有一定的抗干扰能力，但一旦绝缘下降就会带来干扰。还有一种方法，就是将机壳接地，其余部分浮空。这种方法抗干扰能力强，安全可靠，但实现起来比较复杂。<br>（4）模拟地。模拟地的接法十分重要。为了提高抗共模干扰能力，对于模拟信号可采用屏蔽浮技术。对于具体模拟量信号的接地处理要严格按照操作手册上的要求设计。 </p>
 <p>（5）屏蔽地。在控制系统中为了减少信号中电容耦合噪声、准确检测和控制，对信号采用屏蔽措施是十分必要的。根据屏蔽目的不同，屏蔽地的接法也不一样。电场屏蔽解决分布电容问题，一般接大地；电磁场屏蔽主要避免雷达、电台等高频电磁场辐射干扰。利用低阻金属材料高导流而制成，可接大地。磁场屏蔽用以防磁铁、电机、变压器、线圈等磁感应，其屏蔽方法是用高导磁材料使磁路闭合，一般接大地为好。当信号电路是一点接地时，低频电缆的屏蔽层也应一点接地。如果电缆的屏蔽层地点有一个以上时，将产生噪声电流，形成噪声干扰源。当一个电路有一个不接地的信号源与系统中接地的放大器相连时，输入端的屏蔽应接至放大器的公共端；相反，当接地的信号源与系统中不接地的放大器相连时，放大器的输入端也应接到信号源的公共端。</p>
@@ -32,105 +102,229 @@
 <p>Answer:<br>PE,PGND,FG－保护地或机壳；BGND或DC-RETURN－直流－48V(+24V)电源（电池）回流；GND－工作地；DGND－数字地； AGND－模拟地；LGND－防雷保护地 GND在电路里常被定为电压参考基点。<br>从电气意义上说，GND分为电源地和信号地。PG是 Power Ground（电源地）的缩写。另一个是 Signal Ground（信号地）。实际上它们可能是连在一起的（不一定是混在一起哦！）。两个名称，主要是便于对电路进行分析。<br>进一步说，还有因电路形式不同而必须区分的两种“地”：数字地，模拟地。<br>数字地和模拟地都有信号地、电源地两种情况。数字地和模拟地之间，某些电路可以直接连接，有些电路要用电抗器连接，有些电路不可连接。</p>
 <p>Q4：合适的接地方式 Answer:<br>接地有多种方式，有单点接地，多点接地以及混合类型的接地。而单点接地又分为串联单点接地和并联单点接地。一般来说，单点接地用于简单电路，不同功能模块之间接地区分，以及低频（f<1mhz）电子线路。当设计高频（f>10MHz）电路时就要采用多点接地了或者多层板（完整的地平面层）。 Q5：信号回流和跨分割的介绍<br>Answer：对于一个电子信号来说，它需要寻找一条最低阻抗的电流回流到地的途径，所以如何处理这个信号回流就变得非常的关键。<br>第一，根据公式可以知道，辐射强度是和回路面积成正比的，就是说回流需要走的路径越长，形成的环越大，它对外辐射的干扰也越大，所以，PCB布板的时候要尽可能减小电源回路和信号回路面积。<br>第二，对于一个高速信号来说，提供有好的信号回流可以保证它的信号质量，这是因为PCB上传输线的特性阻抗一般是以地层（或电源层）为参考来计算的，如果<br>高速线附近有连续的地平面，这样这条线的阻抗就能保持连续，如果有段线附近没有了地参考，这样阻抗就会发生变化，不连续的阻抗从而会影响到信号的完整性。<br>所以，布线的时候要把高速线分配到靠近地平面的层，或者高速线旁边并行走一两条地线，起到屏蔽和就近提供回流的功能。<br>第三，为什么说布线的时候尽量不要跨电源分割，这也是因为信号跨越了不同电源层后，它的回流途径就会很长了，容易受到干扰。当然，不是严格要求不能跨越电源分割，对于低速的信号是可以的，因为产生的干扰相比信号可以不予关心。对于高速信号就要认真检查，尽量不要跨越，可以通过调整电源部分的走线。（这是针对多层板多个电源供应情况说的） </1mhz）电子线路。当设计高频（f></p>
 <p>Q6：为什么要将模拟地和数字地分开，如何分开?<br>Answer：模拟信号和数字信号都要回流到地，因为数字信号变化速度快，从而在数字地上引起的噪声就会很大，而模拟信号是需要一个干净的地参考工作的。如果模拟地和数字地混在一起，噪声就会影响到模拟信号。一般来说，模拟地和数字地要分开处理，然后通过细的走线连在一起，或者单点接在一起。总的思想是尽量阻隔数字地上的噪声窜到模拟地上。当然这也不是非常严格的要求模拟地和数字地必须分开，如果模拟部分附近的数字地还是很干净的话可以合在一起。 Q7：单板上的信号如何接地?<br>Answer：对于一般器件来说，就近接地是最好的，采用了拥有完整地平面的多层板设计后，对于一般信号的接地就非常容易了，基本原则是保证走线的连续性，减少过孔数量；靠近地平面或者电源平面，等等。 Q8：单板的接口器件如何接地?<br>Answer：有些单板会有对外的输入输出接口，比如串口连接器，网口RJ45连接器等等，如果对它们的接地设计得不好也会影响到正常工作，例如网口互连有误码，丢包等，并且会成为对外的电磁干扰源，把板内的噪声向外发送。一般来说会单独分割出一块独立的接口地，与信号地的连接采用细的走线连接，可以串上0欧姆或者小阻值的电阻。细的走线可以用来阻隔信号地上噪音过到接口地上来。同样的，对接口地和接口电源的滤波也要认真考虑。 Q9：带屏蔽层的电缆线的屏蔽层如何接地?<br>Answer：屏蔽电缆的屏蔽层都要接到单板的接口地上而不是信号地上，这是因为信号地上有各种的噪声，如果屏蔽层接到了信号地上，噪声电压会驱动共模电流沿屏蔽层向外干扰，所以设计不好的电缆线一般都是电磁干扰的最大噪声输出源。当然前提是接口地也要非常的干净<br>混合电路里面做标示用的,VCC表示模拟信号电源,GND表示模拟信号地,VDD表示数字信号电源,VSS表示数字电源地 。<br>VCC主要表示Bipolar电路的电源，C表示Collector集电极,电源一般接在NPN的集电极（或PNP的发射极），集成电路刚出现时只有NPN管，后来才有集成进去的PNP管。VDD/VSS一般表示MOS电路的电源和“地”，D/S分别表示MOS管的Drain(漏)/Source(源)。 一、解释 VCC：C=circuit 表示电路的意思, 即接入电路的电压；<br>VDD：D=device 表示器件的意思, 即器件内部的工作电压；<br>VSS：S=series 表示公共连接的意思，通常指电路公共接地端电压。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在接触电气线路的过程中经常会遇到“接地”的问题，但是这个概念一直没有吃透，以下是网络搜集并整理的对于接地问题的解释。<br>]]>
-    
-    </summary>
-    
-      <category term="接地" scheme="http://yoursite.com/tags/%E6%8E%A5%E5%9C%B0/"/>
-    
-      <category term="修炼笔记" scheme="http://yoursite.com/categories/%E4%BF%AE%E7%82%BC%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
   
-  <entry>
-    <title><![CDATA[Hl20例子学习笔记（2）]]></title>
-    <link href="http://yoursite.com/2014/10/20/model-matlab-hl20-2nd/"/>
-    <id>http://yoursite.com/2014/10/20/model-matlab-hl20-2nd/</id>
-    <published>2014-10-20T14:23:11.000Z</published>
-    <updated>2014-10-21T14:17:07.000Z</updated>
-    <content type="html"><![CDATA[<p>（二）传感器</p>
-<p>在例子中，HL20的传感器被划为两个模块：<br><a id="more"></a></p>
-<img src="/imgine/ADC.bmp" title="adc.mdl">
+	</div>
+		<footer class="article-footer clearfix">
 
-<p>1）IMU,GPS&amp;Radar Altimeter</p>
-<img src="/imgine/imu.jpg" title="imu.mdl">
-
-
-<p>输入：模型输出量</p>
-<p>输出：A)制导量<br>      B）控制量</p>
-<p>2）Airdata System</p>
-<img src="/imgine/airdata_sys.jpg" title="airdata.mdl">
-
-
-<p>输入：模型输出量</p>
-<p>输出：迎角、侧滑、动压</p>
-<p>启示与改进</p>
-<p>航空器常用以下传感器：</p>
-<p>   GPS:提供经纬度，海拔高度，地速，北东地速度</p>
-<p>   IMU：三轴角速率</p>
-<p>   gyro:俯仰角，滚转角</p>
-<p>   HMR:磁航向</p>
-<p>   Radio Altimeter:相对地面高度</p>
-<p>   ADC:指示空速，真空速，气压高度</p>
-<p>   民用大飞机一般还有测量迎角和侧滑角的传感器</p>
-<p>比较上述航空飞行器与HL20的传感器可以发现，存在一定差异，可以将上述传感器重新划分为单独模块，最后将所有传感器量划分为制导量和控制量。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>（二）传感器</p>
-<p>在例子中，HL20的传感器被划为两个模块：<br>]]>
-    
-    </summary>
-    
-      <category term="动力学建模" scheme="http://yoursite.com/tags/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-      <category term="飞行仿真" scheme="http://yoursite.com/categories/%E9%A3%9E%E8%A1%8C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
+  <div class="article-tags">
   
-  <entry>
-    <title><![CDATA[Hl20例子学习笔记（1）]]></title>
-    <link href="http://yoursite.com/2014/10/20/model-matlab-hl20/"/>
-    <id>http://yoursite.com/2014/10/20/model-matlab-hl20/</id>
-    <published>2014-10-20T13:42:19.000Z</published>
-    <updated>2014-10-21T12:15:18.000Z</updated>
-    <content type="html"><![CDATA[<p>MATLAB/SIMULINK向用户提供了许多例子（Demo），以帮助用户快速学习使用MATLAB/SIMULINK进行开发和科研。针对SIMULINK的的航空工具箱，MATLAB提供了一个非常优秀的例子——hl20。所有的库、模型、和开发应用都在路径.\MATLAB\R2010b\toolbox\aeroblks\aerodemos下面。<br><a id="more"></a><br>下面针对该例子进行总结归纳，分析其总体思路和核心的技术点。</p>
-<img src="/imgine/hl20.jpg" title="aeroblk_HL20.mdl">
+  <span></span> <a href="/tags/接地/">接地</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/修炼笔记/">修炼笔记</a>
+</div>
 
 
 
-<p>文件aeroblk_HL20.mdl为一个较为完整的例子，该例子展示了如何搭建一个完整的航天器的仿真模型。包括以下功能模块：</p>
-<p>动力学模型计算<br>传感器模型<br>舵机模型<br>制导律解算<br>控制律解算<br>辅助的数据可视化功能<br>下面针对这些功能模块逐一进行分析和归纳。</p>
-<p>（一）动力学模型<br>从HL20动力学模型的外部接口可以开出，输入为舵机输入量和推力。舵机输入量一共有6个量：副翼、升降舵、方向舵、襟翼（3个）；可以发现三维推力被设定为[0 0 0],这是应为该例子演示的是HL20无动力返回的过程，所以发动机始终处于关闭状态，推力始终为零。</p>
-<img src="/imgine/dynamics.jpg" title="dynamics">
+<div class="article-share" id="share">
 
-<p>打开动力学模型可以发现，有5个模块，分别是</p>
-<p>1）气动系数计算模块</p>
-<p>2）气动力和力矩计算模块</p>
-<p>3）标准6自由度刚体模型</p>
-<p>4）大气环境模型</p>
-<p>5）涉及气流环境的模型输出量解算模块</p>
-<p>从这个模块可以发现以下的小技巧：</p>
-<p>a)模型的输入量和输出量很多，一般采用总线，减少连线，而且不容易出错。</p>
-<p>b)动力学模型标准输出量为：首先是标准刚体输出：NED速度（3D），NED位置（3D），欧拉角(3D),姿态角变换阵DCM(3*3)，机体速度（欧美系，3D），角速度（3D）,欧拉角微分（3D）,加速度（3D）；其次是马赫数，迎角和侧滑角。</p>
-<p>c)模型中涉及到许多参变量，应该尽量采用变量的形式，在初始化中加载变量的数值。这样方便修改和进行逻辑判断。</p>
-<p>d)尽量细分子模块，明确子模块的输入和输出，保持独立性，杜绝耦合。</p>
-<p>启示与改进：</p>
-<p>1）HL20是航天器，其模型的输入和输出与航空器存在较大区别。主要体现在控制舵面和输出量。直升机的控制舵面为总距、横向周期变距、纵向周期变距、尾桨距、油门；常规构型的固定翼飞机的控制舵面为油门，副翼，升降舵和方向舵，部分飞机还有襟翼。可以发现这里涉及到一个问题，发动机模型是否应该放在动力学模型中？答案是否定，发动机模型的输出量作为动力学模型的输入量，两个模块相互区分开。固定翼和直升机的发动机存在很大区别，固定翼飞机发动机用于提供推力，可以直接用于加速和减速，而直升机发动机则用于提供稳定转速。与旋翼之间还存在一个复杂的传动机构，这里不再赘述。</p>
-<p>由于航天一般采用惯性导航系统，不使用GPS，而航空器广泛使用GPS，因此对位置量采用何种表示形式值得仔细推敲。模型是否应该输出经纬度？6自由度刚体模型输出NED位置偏移量，这是相对于起始位置的，如果已知起始位置的经纬度，可以很简单直接的计算出实时经纬度。问题是这个工作应该由动力学模型还是传感器模型完成？我认为应该由动力学模型完成。</p>
-<p>2）量纲的选择。一般来说在模型计算时采用国际标准量纲，在传感器模块中将角运动单位由弧度转换为度。</p>
-<p>3）坐标系的选择。目前机体多选择欧美坐标系，大地系多采用NED(north-eat-down)坐标系。这里面有个问题就是垂向速度的正负问题，在GPS,大气数据计算机，无线电高度表这些传感器都是向上为正，这符合人的一般认知习惯。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>MATLAB/SIMULINK向用户提供了许多例子（Demo），以帮助用户快速学习使用MATLAB/SIMULINK进行开发和科研。针对SIMULINK的的航空工具箱，MATLAB提供了一个非常优秀的例子——hl20。所有的库、模型、和开发应用都在路径.\MATLAB\R2010b\toolbox\aeroblks\aerodemos下面。<br>]]>
-    
-    </summary>
-    
-      <category term="动力学建模" scheme="http://yoursite.com/tags/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-      <category term="飞行仿真" scheme="http://yoursite.com/categories/%E9%A3%9E%E8%A1%8C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
   
-</feed>
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_twitter">Twitter</a>
+    <a class="jiathis_button_evernote">EverNote</a>
+    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"702071213"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+" charset="utf-8"></script>      
+
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/10/20/model-matlab-hl20-2nd/"  title="Hl20例子学习笔记（2）">
+ <strong>NEXT:</strong><br/> 
+ <span>Hl20例子学习笔记（2）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">3</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/动力学建模/" style="font-size: 20.00px;">动力学建模</a><a href="/tags/接地/" style="font-size: 10.00px;">接地</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+       <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/702071213" target="_blank" title="weibo"></a>
+		
+		
+		
+		<a href="https://github.com/wgangqiang" target="_blank" title="github"></a>
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wizicer/iceman" target="_blank" title="Iceman">Iceman</a> © 2014 
+		
+		<a href="http://yoursite.com" target="_blank" title="GQ.Wang">GQ.Wang</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
