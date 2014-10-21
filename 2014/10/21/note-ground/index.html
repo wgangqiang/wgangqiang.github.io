@@ -18,8 +18,8 @@
     <link rel="icon" href="/img/favicon.ico">
     
     
-    <link rel="apple-touch-icon" href="/img/author.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
     
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
@@ -29,10 +29,6 @@
     <header>
       <div>
 		
-			<div id="imglogo">
-				<a href="/"><img src="/img/slugs.png" alt="GQ.Wang&#39;s 实验室" title="GQ.Wang&#39;s 实验室"/></a>
-			</div>
-			
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="GQ.Wang&#39;s 实验室">GQ.Wang&#39;s 实验室</a></h1>
 				<h2 class="blog-motto">虽然走的很慢，但是从来没有后退。</h2>
@@ -51,11 +47,17 @@
 					
 						<li><a href="/categories/修炼笔记">修炼笔记</a></li>
 					
-						<li><a href="/categories/扯闲篇专用">扯闲篇专用</a></li>
+						<li><a href="/categories/扯闲篇">扯闲篇</a></li>
 					
 						<li><a href="/about">关于本站</a></li>
 					
 					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
 					
 					</li>
 				</ul>
@@ -81,7 +83,6 @@
     
   </p>
 </header>
-
 	<div class="article-content">
 		
 		
@@ -136,7 +137,6 @@
     sm:"copy,renren,cqq",
     pic:"",
     summary:"",
-     ralateuid:{"tsina":"702071213"},hideMore:false}
     
   </script> 
 <script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
@@ -185,18 +185,23 @@
 
 
   
-  <div class="tagcloudlist">
-    <p class="asidetitle">标签云</p>
-    <div class="tagcloudlist clearfix">
-       <a href="/tags/动力学建模/" style="font-size: 20.00px;">动力学建模</a><a href="/tags/接地/" style="font-size: 10.00px;">接地</a>
-    </div>
-  </div>
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/动力学建模/" title="动力学建模">动力学建模<sup>2</sup></a></li>
+		
+			<li><a href="/tags/接地/" title="接地">接地<sup>1</sup></a></li>
+		
+		</ul>
+</div>
 
 
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
     <ul>
-       <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
     </ul>
 </div>
 
@@ -209,15 +214,11 @@
 	
 	<div class="social-font" class="clearfix">
 		
-		<a href="http://weibo.com/702071213" target="_blank" title="weibo"></a>
 		
-		
-		
-		<a href="https://github.com/wgangqiang" target="_blank" title="github"></a>
 		
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wizicer/iceman" target="_blank" title="Iceman">Iceman</a> © 2014 
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
 		
 		<a href="http://yoursite.com" target="_blank" title="GQ.Wang">GQ.Wang</a>
 		
@@ -322,9 +323,5 @@ $(document).ready(function(){
 
 
 
-
-
-
   </body>
 </html>
-
