@@ -2,18 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2014/10/21/note-ground/</loc>
+    <lastmod>2014-10-21T14:19:30.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2014/10/20/model-matlab-hl20-2nd/</loc>
-    <lastmod>2014-10-20T15:02:08.000Z</lastmod>
+    <lastmod>2014-10-21T14:17:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    <lastmod>2014-10-21T14:04:36.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://yoursite.com/2014/10/20/model-matlab-hl20/</loc>
-    <lastmod>2014-10-20T14:51:43.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2014/10/19/first-post/</loc>
-    <lastmod>2014-10-19T16:23:41.000Z</lastmod>
+    <lastmod>2014-10-21T12:15:18.000Z</lastmod>
   </url>
   
 </urlset>
